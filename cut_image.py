@@ -41,13 +41,13 @@ def cut_image(image):
 def save_images(image_list):
     index = 1
     for image in image_list:
-        image.save('./result/'+str(index) + '.png', 'PNG')
+        image.save('./result/python'+str(index) + '.png', 'PNG')
         index += 1
 
 
 
 if __name__ == '__main__':
-    file_path = "dcapi.jpeg"
+    file_path = "python.jpeg"
     image = Image.open(file_path)
     #image.show()
     image = fill_image(image)
